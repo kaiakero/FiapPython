@@ -2,14 +2,14 @@ equipamento = []
 valor = []
 serie = []
 setor = []
-resposta = 'S'
+resposta = 'SIM'
 
-while resposta == 'S':
+while resposta == 'SIM':
     equipamento.append(input('Equipamento:  '))
     valor.append(float(input('Valor estimado do Equipamento:  ')))
     serie.append(int(input('Informe o numero de serie do equipamento:  ')))
     setor.append(input('Informe o setor do equipameto:  '))
-    resposta = input('digite "sim" para adicionar um elemento')
+    resposta = input('digite "sim" para adicionar um elemento').upper
 
     for indice in range(0,len(equipamento)):
         print ('Equipamento', (indice+1))
